@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wenura Randunu | Cloud & Infrastructure Security Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+.w3-sidebar {width: 120px;background: #111;}
+#main {margin-left: 120px;}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.w3-dark-grey {background-color: #333 !important;}
+
+/* Flex layout for tiles */
+.tile-row {display: flex; flex-wrap: wrap; margin: -8px; align-items: stretch;} /* stretch all tiles */
+.tile-col {padding: 8px; box-sizing: border-box; flex: 1 1 33%; min-width: 250px; display: flex;}
+.w3-tile {
+  background-color: #333; 
+  padding: 12px;       /* compact padding */
+  border-radius: 8px;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  flex: 1 1 auto;      /* allow tile to grow and match row height */
+}
+.w3-tile h4 {margin-top: 0; margin-bottom: 12px;}
+
+@media only screen and (max-width: 900px) {
+  .tile-col {flex: 1 1 50%;}
+}
+@media only screen and (max-width: 600px) {
+  .tile-col {flex: 1 1 100%;}
+}
+
+/* PROJECTS SPECIFIC: 4 tiles per row */
+.project-col {padding: 8px; box-sizing: border-box; flex: 0 0 25%; min-width: 200px; display: flex;}
+.project-col .w3-tile {
+  background-color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 auto;      /* equal height in row */
+}
+
+@media only screen and (max-width: 1200px) { .project-col {flex: 0 0 33.33%;} }
+@media only screen and (max-width: 900px) { .project-col {flex: 0 0 50%;} }
+@media only screen and (max-width: 600px) { .project-col {flex: 0 0 100%;} }
+
+</style>
+</head>
+
+<body class="w3-black">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#skills" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-cogs w3-xxlarge"></i>
+    <p>SKILLS</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-folder-open w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#certifications" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-certificate w3-xxlarge"></i>
+    <p>CERTIFICATES</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+<!-- Header -->
+<header class="w3-container w3-padding-64 w3-center w3-black" id="home">
+  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+    <img src="Img2.png" alt="Wenura Randunu" style="width:240px; height:240px; border-radius:50%; margin-right:20px;">
+    <div>
+      <h1 class="w3-jumbo">I'm Wenura Randunu</h1>
+      <p>Cloud & Infrastructure Security Engineer</p>
+      <p>Microsoft 365 | Hybrid Infrastructure | Endpoint Security | Linux Hardening</p>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="about">
+  <h2 class="w3-text-light-grey">Professional Summary</h2>
+  <hr style="width:200px" class="w3-opacity">
+  <p>
+	Cyber Security and Cloud Infrastructure professional with hands-on 
+	experience supporting enterprise environments across Sri Lanka and 
+	UK-based operations. Cyber Security graduate skilled in administering 
+	and securing hybrid infrastructures, including Microsoft 365 
+	(Exchange Online, Entra ID, Intune, SharePoint), 
+	Windows Server 2012/2019/2022, Active Directory (on-prem & Azure AD), 
+	and Linux (Ubuntu, Zimbra). Experienced in implementing 
+	ISO/IEC 27001-aligned controls, Zero Trust architecture, 
+	conditional access policies, BitLocker encryption, LAPS, 
+	endpoint hardening, and firewall configurations. Proficient in 
+	automation using PowerShell, Bash, and Python, with expertise in 
+	tenant-level administration, security monitoring via Microsoft 
+	Purview, and enterprise cloud migrations.
+  </p>
+</div>
+
+<!-- Technical Skills Section (unchanged) -->
+<div class="w3-padding-64 w3-content" id="skills">
+  <h2 class="w3-text-light-grey">Technical Skills</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="tile-row">
+    <div class="tile-col"><div class="w3-tile"><h4>Cloud & Microsoft 365</h4><ul><li>Entra ID / Azure AD</li><li>Exchange Online</li><li>SharePoint Online</li><li>Intune</li><li>Conditional Access / MFA</li></ul></div></div>
+    <div class="tile-col"><div class="w3-tile"><h4>Windows & Infrastructure</h4><ul><li>Windows Server 2012/2019/2022</li><li>Active Directory (on-prem & Azure AD)</li><li>GPO Management</li><li>BitLocker & LAPS</li></ul></div></div>
+    <div class="tile-col"><div class="w3-tile"><h4>Linux / Unix</h4><ul><li>Ubuntu Administration</li><li>Zimbra Mail Server</li><li>LUKS Full Disk Encryption</li><li>Bash Scripting</li></ul></div></div>
+    <div class="tile-col"><div class="w3-tile"><h4>Networking</h4><ul><li>LAN/WAN design</li><li>VLAN Segmentation</li><li>Aruba & Ruckus APs</li><li>Firewall Configuration</li></ul></div></div>
+    <div class="tile-col"><div class="w3-tile"><h4>Security & Compliance</h4><ul><li>ISO/IEC 27001 projects</li><li>Zero Trust Architecture</li><li>Data Loss Prevention</li><li>Endpoint Security Policies</li></ul></div></div>
+    <div class="tile-col"><div class="w3-tile"><h4>Automation & Development</h4><ul><li>Python / PowerShell / Bash scripting</li><li>Web platforms & ticketing systems</li><li>ML-based Email Threat Detection</li></ul></div></div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-padding-64 w3-content" id="projects">
+  <h2 class="w3-text-light-grey">Key Projects</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <div class="tile-row">
+    <div class="project-col"><div class="w3-tile"><h4>Enterprise Device Management</h4><p>Connected 100+ laptops to Entra ID via Intune; implemented LAPS, BitLocker, GEO restrictions, and USB controls.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>File & Email Migration</h4><p>Migrated 1.2TB file server to SharePoint Online and Zimbra Mail Server to Microsoft 365.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Network Redesign & Migration</h4><p>Aruba & Ruckus AP deployment; migrated LAN to WAN, configured VLANs, enhanced wireless performance.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Local File Server Deployment</h4><p>Designed and implemented secure on-premises file server with structured access controls.</p></div></div>
+
+    <div class="project-col"><div class="w3-tile"><h4>Firewall Upgrade for ISO 27001</h4><p>Reconfigured and upgraded firewall aligning with ISO/IEC 27001 controls.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Windows Security Enhancement</h4><p>Applied password policies, restricted software installation, enabled DLP, and automated backups.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Linux Security Hardening</h4><p>Enabled LUKS full disk encryption with TPM 2.0 and blocked USB ports using custom scripts.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Privileged Access Control</h4><p>Automated removal of unauthorized local admin accounts, retaining only LAPS-managed accounts.</p></div></div>
+
+    <div class="project-col"><div class="w3-tile"><h4>Automated Network Monitoring</h4><p>Python-based system to monitor organizational access points and network availability.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Admin Automation Scripts</h4><p>Bash & PowerShell scripts for endpoint configuration, security enforcement, and operational efficiency.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Cloud Database & Jira API Automation</h4><p>MySQL cloud database; cross-database synchronization and automated attendance push to Jira via Python REST API.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>ML-based Email Threat Detection</h4><p>Developed Python/NLP system for spam & phishing detection.</p></div></div>
+
+    <div class="project-col"><div class="w3-tile"><h4>Incident Ticket Management System</h4><p>Web-based platform for balanced task allocation and workflow efficiency.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>Learning HUB Platform</h4><p>Mobile-accessible portal for centralized learning without external licensing.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>2D Web-Based Car Game</h4><p>Interactive browser game introducing employees to internal project concepts.</p></div></div>
+    <div class="project-col"><div class="w3-tile"><h4>YouTube Transcript Summarizer</h4><p>Python app to summarize, translate (English/Sinhala/Tamil), and generate voice output.</p></div></div>
+  </div>
+</div>
+
+<!-- Certifications & Education Section -->
+  <div class="w3-padding-64 w3-content" id="certifications">
+    <h2 class="w3-text-light-grey">Certifications & Education</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="tile-row">
+      <!-- Education -->
+      <div class="tile-col"><div class="w3-tile"><h4>BSc (Hons) Computer Science (Cyber Security)</h4><p>University of Kelaniya, Sri Lanka (2024)</p><p>Second Upper Class | GPA: 3.67</p></div></div>
+      <div class="tile-col"><div class="w3-tile"><h4>G.C.E (A/L)</h4><p>Thurstan College, Colombo 07</p><p>3B’s (Physical Science Stream)</p></div></div>
+      <div class="tile-col"><div class="w3-tile"><h4>G.C.E (O/L)</h4><p>Thurstan College, Colombo 07</p><p>7A’s, 1B, 1C</p></div></div>
+      
+      <!-- Online Certifications -->
+      <div class="tile-col"><div class="w3-tile"><h4>Credly Certifications</h4><p><a href="https://www.credly.com/users/wenura-randunu" target="_blank" style="color:#00bfff;">View Badge</a></p></div></div>
+      <div class="tile-col"><div class="w3-tile"><h4>Cybrary Certifications</h4><p><a href="https://app.cybrary.it/profile/Wenura_Randunu" target="_blank" style="color:#00bfff;">View Certificate</a></p></div></div>
+      <div class="tile-col"><div class="w3-tile"><h4>Microsoft Profile & Certifications</h4><p><a href="https://learn.microsoft.com/en-us/users/YOUR-MICROSOFT-PROFILE" target="_blank" style="color:#00bfff;">View Profile</a></p></div></div>
+    </div>
+  </div>
+  
+
+<!-- Contact Section -->
+<div class="w3-padding-64 w3-content w3-text-light-grey" id="contact">
+  <h2 class="w3-text-light-grey">Contact</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <p>
+    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+    wenurarandunu@gmail.com
+  </p>
+  
+  <p>
+    <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+    +94 741122490
+  </p>
+
+  <p>
+    <i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+    <a href="https://www.linkedin.com/in/wenurarandunu" target="_blank" 
+       style="color: #00bfff; text-decoration: none;">
+       www.linkedin.com/in/wenurarandunu
+    </a>
+  </p>
+
+  <p>
+    <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+    <a href="https://github.com/WenuraRandunu" target="_blank" 
+       style="color: #00bfff; text-decoration: none;">
+       github.com/WenuraRandunu
+    </a>
+  </p>
+
+</div>
+
+<footer class="w3-content w3-padding-32 w3-text-grey w3-center">
+  <p>© 2026 Wenura Randunu | Cloud & Infrastructure Security Engineer</p>
+</footer>
+
+</body>
+</html>
