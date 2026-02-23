@@ -17,18 +17,48 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
 
 .w3-dark-grey {background-color: #333 !important;}
 
+/* Smooth transitions globally */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Hover Effect */
+.w3-sidebar .w3-button {
+  transition: all 0.3s ease;
+}
+
+.w3-sidebar a:hover {
+  text-decoration: none !important;
+}
+
+.w3-sidebar .w3-button:hover {
+  background-color: #1a1a1a !important;
+  color: #00bfff !important;
+  transform: translateX(6px);
+  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.4);
+}
+
 /* Flex layout for tiles */
-.tile-row {display: flex; flex-wrap: wrap; margin: -8px; align-items: stretch;} /* stretch all tiles */
+.tile-row {display: flex; flex-wrap: wrap; margin: -8px; align-items: stretch;}
 .tile-col {padding: 8px; box-sizing: border-box; flex: 1 1 33%; min-width: 250px; display: flex;}
+
 .w3-tile {
   background-color: #333; 
-  padding: 12px;       /* compact padding */
+  padding: 12px;
   border-radius: 8px;
   display: flex; 
   flex-direction: column; 
   justify-content: flex-start;
-  flex: 1 1 auto;      /* allow tile to grow and match row height */
+  flex: 1 1 auto;
 }
+
+/* Tile Hover Effect */
+.w3-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
+  background-color: #3d3d3d;
+}
+
 .w3-tile h4 {margin-top: 0; margin-bottom: 12px;}
 
 @media only screen and (max-width: 900px) {
@@ -38,7 +68,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
   .tile-col {flex: 1 1 100%;}
 }
 
-/* PROJECTS SPECIFIC: 4 tiles per row */
+/* PROJECTS SPECIFIC */
 .project-col {padding: 8px; box-sizing: border-box; flex: 0 0 25%; min-width: 200px; display: flex;}
 .project-col .w3-tile {
   background-color: #333;
@@ -47,17 +77,32 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  flex: 1 1 auto;      /* equal height in row */
+  flex: 1 1 auto;
 }
 
 @media only screen and (max-width: 1200px) { .project-col {flex: 0 0 33.33%;} }
 @media only screen and (max-width: 900px) { .project-col {flex: 0 0 50%;} }
 @media only screen and (max-width: 600px) { .project-col {flex: 0 0 100%;} }
 
+/* Profile Image Hover */
+header img {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0,191,255,0.6);
+}
+
+/* Link Hover Effect */
+a:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+
 </style>
 </head>
 
 <body class="w3-black">
+
+<!-- Your HTML remains EXACTLY the same below -->
 
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
